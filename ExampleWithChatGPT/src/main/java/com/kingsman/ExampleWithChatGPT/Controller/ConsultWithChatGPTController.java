@@ -31,6 +31,8 @@ public class ConsultWithChatGPTController implements InitializingBean {
 
     @GetMapping("/prompt")
     public ChatResponse prompt(@RequestParam String message) {
+        //Este ruta entrenamos mejor al ChatGPT
+        
         //The maximum number of tokens to generate in the completion.The token count of your prompt plus max_tokens cannot exceed the model's context length. Most models have a context length of 2048 tokens (except for the newest models, which support 4096).
         Integer maxTokens = 300;
         // GPT-3 models can understand and generate natural language. We offer four main models with different levels of power suitable for different tasks. Davinci is the most capable model, and Ada is the fastest.
